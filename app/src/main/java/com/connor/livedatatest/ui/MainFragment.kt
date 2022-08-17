@@ -43,6 +43,9 @@ class MainFragment : EngineFragment<FragmentMainBinding>(R.layout.fragment_main)
             binding.button2 -> {
                 findNavController().navigate(R.id.action_mainFragment_to_blankFragment)
             }
+            binding.btnPaging -> {
+                findNavController().navigate(R.id.action_mainFragment_to_pagingFragment)
+            }
         }
     }
 

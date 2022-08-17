@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_mainFragment_to_blankFragment"
             app:destination="@id/blankFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_pagingFragment"
+            app:destination="@id/pagingFragment" />
     </fragment>
     <fragment
         android:id="@+id/blankFragment"
@@ -23,4 +26,9 @@
             android:id="@+id/action_blankFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/pagingFragment"
+        android:name="com.connor.livedatatest.ui.PagingFragment"
+        android:label="fragment_paging"
+        tools:layout="@layout/fragment_paging" />
 </navigation>
