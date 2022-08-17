@@ -1,7 +1,6 @@
 package com.connor.livedatatest.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.paging.PagingDataAdapter
@@ -32,9 +31,8 @@ class RepoAdapter : PagingDataAdapter<Repo, RepoAdapter.ViewHolder>(COMPARATOR) 
             parent,
             false
         )
-        val holder = ViewHolder(binding)
 
-        return holder
+        return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
